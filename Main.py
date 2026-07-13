@@ -5,11 +5,12 @@ import os
 from keep_alive import keep_alive
 
 # ========================= CONFIG =========================
-TELEGRAM_TOKEN = os.environ["8730281095:AAGReDa2y22NiLgDHqHHP2Os1w089p9GExc"]
-TELEGRAM_CHAT_ID = os.environ["6685026718"]
+TELEGRAM_TOKEN = os.environ["TELEGRAM_TOKEN"]
+TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 CHECK_INTERVAL = 10  # seconds
 ACCOUNTS_FILE = os.path.join(os.path.dirname(__file__), "accounts.txt")
 SEEN_FILE = os.path.join(os.path.dirname(__file__), "seen_messages.json")
+# =======================================================
 # =======================================================
 
 keep_alive()  # Start the web server
